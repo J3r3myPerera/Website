@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinuka Perera</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@600&family=IBM+Plex+Sans&family=Poppins:wght@100;200;300;400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f85908b886.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Dinuka Perera</h1>
+        <p>
+          A passionate individual who's learning through his mistakes<br />
+          to be a better man tommorrow.
+        </p>
+        <a href="#" class="hero-btn">Discover</a>
+      </div>
+    </section>
+
+    <!-- Secoind part -->
+    <section class="course">
+      <h1>Latest Projects</h1>
+      <p>The below are the latest courses that I am working on</p>
+
+      <div class="row">
+        <div class="project">
+          <h3>The Predictor</h3>
+          <p>
+            The Predictor is a stock prediction application wich uses machibe
+            learning to predict the outcome<br />
+            of a particular stock on a respective time frame
+          </p>
+        </div>
+        <div class="project">
+          <h3>The Predictor</h3>
+          <p>
+            The Predictor is a stock prediction application wich uses machibe
+            learning to predict the outcome<br />
+            of a particular stock on a respective time frame
+          </p>
+        </div>
+        <div class="project">
+          <h3>The Predictor</h3>
+          <p>
+            The Predictor is a stock prediction application wich uses machibe
+            learning to predict the outcome<br />
+            of a particular stock on a respective time frame
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="cta">
+      <h1>Lets have a conversation!</h1>
+      <a href="#" class="hero-btn">CONTACT</a>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <h4>About me</h4>
+      <p>
+        Come hang out with me on my socials and see what is going on over there.
+      </p>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/dinuka-jeremy/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <!-- <i class="fa fa-facebook"></i> -->
+        <a href="https://twitter.com/dinuka_jeremy" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/j3r3my_perera" target="_blank"><i class="fa fa-instagram"></i>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
