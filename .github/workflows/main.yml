@@ -12,29 +12,29 @@ jobs:
    name: Bulid
    runs-on: ubuntu-latest
    steps:
-    - name: checkout repository
-      user: action/checkout@main
-    - name: Install dependencies
-      run: npm ci
-    - name: Build dependencies
-      run: npm run build
-    - name: Archive production artifact
-      run: action/upload-artifact@main
-      with:
-        name: dist
-	path: dist
-   deploy:
-     name: Deploy
-     needs: build
-     run-on: ubuntu-latest
-     steps:
-       -name: checkout repository
-        uses: actions/checkout@main
-       -name: Download artifact
-        uses: actions/download-artifact@main
-        with:
-          name: dist
-	  path: dist
+     - name: checkout repository
+       user: action/checkout@main
+     - name: Install dependencies
+       run: npm ci
+     - name: Build dependencies
+       run: npm run build
+     - name: Archive production artifact
+       run: action/upload-artifact@main
+       with:
+         name: dist
+	 path: dist
+deploy:
+      name: Deploy
+      needs: build
+      run-on: ubuntu-latest
+      steps:
+       - name: checkout repository
+         uses: actions/checkout@main
+       - name: Download artifact
+         uses: actions/download-artifact@main
+         with:
+           name: dist
+	   path: dist
        -name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
