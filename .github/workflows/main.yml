@@ -10,7 +10,7 @@ on:
 jobs:
  build:
    name:Bulid
-   runs-on: ubuntu latest
+   runs-on: ubuntu-latest
    steps:
     - name: checkout repository
       user: action/checkout@main
