@@ -9,7 +9,7 @@ on:
 
 jobs:
  build:
-   name:Bulid
+   name: Bulid
    runs-on: ubuntu-latest
    steps:
     - name: checkout repository
